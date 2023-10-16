@@ -12,16 +12,16 @@ const ProgramSelector = () => {
                 <StandardButton text ={'Open'}/>
             </div>
         </container>
-        <div className="littleCircle border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center">
+        <div className="littleCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center">
         <StandardButton text ={'About'}/>
         </div>
-        <div className="littleCircle border-2 border-black absolute left-24 bottom-2 rounded-full bg-emerald-700 flex justify-center">
+        <div className="littleCircleLeft border-2 border-black absolute left-24 bottom-2 rounded-full bg-emerald-700 flex justify-center">
             <StandardButton text ={'Theme'}/>
         </div>
-        <div className="littleCircle border-2 border-black absolute right-24 top-2 rounded-full bg-emerald-700 flex justify-center ">
+        <div className="littleCircleRight border-2 border-black absolute right-24 top-2 rounded-full bg-emerald-700 flex justify-center ">
             <StandardButton text ={'Game'}/>
         </div>
-        <div className="littleCircle border-2 border-black absolute right-24 bottom-2 rounded-full bg-emerald-700 flex justify-center">
+        <div className="littleCircleRight border-2 border-black absolute right-24 bottom-2 rounded-full bg-emerald-700 flex justify-center">
             <StandardButton text ={'Giphy Machine'}/>
         </div>
 
