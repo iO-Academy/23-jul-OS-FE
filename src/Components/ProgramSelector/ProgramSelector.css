@@ -15,15 +15,27 @@
     width: 130px;
     height: 130px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-    animation-name: movingButtonsRight;
-    animation-duration: 2s;
 }
 
 .littleCircleLeft {
     width: 130px;
     height: 130px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.animatedCircleLeft {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     animation-name: movingButtonsLeft;
+    animation-duration: 2s
+}
+
+.animatedCircleRight {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    animation-name: movingButtonsRight;
     animation-duration: 2s;
 }
 
