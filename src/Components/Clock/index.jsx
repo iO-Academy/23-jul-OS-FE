@@ -9,7 +9,7 @@ const Clock = () => {
         setInterval(() => {
             const dateObject = new Date()
 
-            const month = dateObject.toLocaleString('en-US', {month: 'long'})
+            const month = dateObject.toLocaleString('en-US', {month: 'short'})
             const day = dateObject.getDate()
             const hour = dateObject.getHours()
             let minute = dateObject.getMinutes()
