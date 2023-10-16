@@ -1,0 +1,12 @@
+
+.circle {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.littleCircle {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
