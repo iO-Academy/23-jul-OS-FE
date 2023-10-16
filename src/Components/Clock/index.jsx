@@ -16,7 +16,7 @@ const Clock = () => {
             if (minute < 10) {
                 minute = '0' + minute
             }
-            const curTime = month + ' ' + day + ' ' + hour + ':' + minute
+            const curTime = day + ' ' + month + ' ' + hour + ':' + minute
             setTime(curTime)
         }, 1000)
     }, [])
