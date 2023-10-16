@@ -4,7 +4,7 @@ import Clock from "../Clock/index.jsx";
 const NavBar = () => {
 
     return (
-        <div className={"bg-purple-100 flex justify-between px-5 py-2 text-2xl"}>
+        <div className="bg-purple-100 flex justify-between px-5 py-2 text-xl">
             <NavButton text="Logout" />
             <NavButton text="Menu" />
             <Clock />
