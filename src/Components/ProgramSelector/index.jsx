@@ -1,13 +1,17 @@
 import './ProgramSelector.css'
 import StandardButton from "../StandardButton/index.jsx";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 const ProgramSelector = () => {
 
     const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
-        setVisible(true)
+        if (visible === false) {
+            setVisible(true);
+        } else {
+            setVisible(false);
+        }
     }
 
     return (
@@ -17,10 +21,10 @@ const ProgramSelector = () => {
             <div className ="text-center mt-5">User</div>
             <div className ="bg-red-800 text-center mt-5">User Icon</div>
             <div className="littleCircle rounded-full bg-emerald-700 mt-20 flex justify-center">
-                <StandardButton text ={'Open'} handleClick={handleClick}/>
+                <StandardButton text ={visible ? 'close' : 'open'} handleClick={handleClick}/>
             </div>
         </container>
-        <div className={visible ? "animatedCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center"}>
+        <div className={visible ? "animatedCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center "}>
             <StandardButton text={'About'} />
         </div>
         <div className={visible ? "animatedCircleLeft border-2 border-black absolute left-24 bottom-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleLeft border-2 border-black absolute left-24 bottom-2 rounded-full bg-emerald-700 flex justify-center"}>

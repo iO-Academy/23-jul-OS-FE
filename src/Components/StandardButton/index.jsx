@@ -1,8 +1,8 @@
-const StandardButton = ({text, handleClick, hasBeenClicked}) => {
+const StandardButton = ({text, handleClick}) => {
 
     return (
         <>
-            <button className={'button' + (hasBeenClicked ? ' clicked' : '')} onClick={handleClick} >{text}</button>
+            <button onClick={handleClick} >{text}</button>
         </>
     )
 }
