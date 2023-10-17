@@ -1,7 +1,7 @@
 import './ProgramContainer.css'
 import Draggable from "react-draggable";
 
-const ProgramContainer = ({toggleProgram, text}) => {
+const ProgramContainer = ({toggleProgram, text, children}) => {
     return (
         <Draggable handle="header">
             <div className="program resize overflow-auto">
