@@ -2,7 +2,7 @@ import './ProgramSelector.css'
 import StandardButton from "../StandardButton/index.jsx";
 import {useState} from "react";
 
-const ProgramSelector = ({username, icon, visible, openMenu}) => {
+const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram}) => {
 
 
 
