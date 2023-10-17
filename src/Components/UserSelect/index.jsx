@@ -17,27 +17,9 @@ const UserSelect = () => {
         setUser(userData)
     }
 
-    const fillButtonWithUserData = (usersData) => {
-        return usersData.map(user => {
-            return (
-                <StandardButton
-                    key = {user.data.id}
-                    text = {user.data.username}
-                    handleClick = {getUser(user.data.id)}
-                />
-            )
-        })
-    }
-
     return (
         <>
-            <div className = "flex justify-center flex-wrap flex-col content-center mt-20">
-                <container className="WelcomeCircle rounded-full bg-green-900 bg-opacity-45 mt-20 z-10 flex justify-center flex-wrap flex-col content-center">
-                    <div className="littleCircle rounded-full bg-emerald-700 mt-20 flex justify-center">
                         <StandardButton text ={'User Select'} handleClick={getAllUsers}/>
-                    </div>
-                </container>
-            </div>
         </>
     )
 }

@@ -9,51 +9,35 @@ const ProgramSelector = ({username, icon, visible, openMenu, openProgram, active
     }
 
     const programs = [
-        'About',
-        'Theme',
-        'Game',
-        'Giphy Machiney'
+        {name: 'About',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
+        {name: 'Theme',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'bottom'},
+        {name: 'Game',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'top'},
+        {name: 'Giphy Machiney',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
     ]
 
-    const generateButtons = (programs) => {
-        return programs.map(program => {
-            return <div className="littleCircle border-2 border-black rounded-full bg-emerald-700 flex justify-center" key={program}>
+    const generateButtons = (array) => {
+        return array.map(item => {
+            return <div className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"} key={item.name}>
                 <StandardButton
-                    key={program}
-                    text={program}
+                    key={item.name}
+                    text={item.name}
                     handleClick={openMenu}/>
             </div>
         })
     }
 
     return (
-        <>
             <div className="flex justify-center">
                 <div className="circle rounded-full bg-green-900 bg-opacity-45 mt-0 z-10 flex justify-center flex-wrap flex-col content-center">
                     <div className="text-center mt-5">Welcome</div>
                     <div className="text-center mt-5">{username}</div>
                     <div className="bg-red-800 text-center mt-5">{icon}</div>
-                    <div className="littleCircle rounded-full bg-emerald-700 mt-20 flex justify-center">
+                    <div className="getProgramButton rounded-full bg-emerald-700 mt-20 flex justify-center">
                         <StandardButton text={visible ? 'Close' : 'Open'} handleClick={openMenu}/>
                     </div>
                 </div>
-                <div className={visible ? "animatedCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleLeft border-2 border-black absolute left-24 top-2 rounded-full bg-emerald-700 flex justify-center"}>
-                    <StandardButton text={'About'} handleClick={handleClick}/>
-                </div>
-                <div className={visible ? "animatedCircleLeft border-2 border-black absolute left-24 bottom-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleLeft border-2 border-black absolute left-24 bottom-2 rounded-full bg-emerald-700 flex justify-center"}>
-                    <StandardButton text={'Theme'} handleClick={handleClick}/>
-                </div>
-                <div className={visible ? "animatedCircleRight border-2 border-black absolute right-24 top-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleRight border-2 border-black absolute right-24 top-2 rounded-full bg-emerald-700 flex justify-center"}>
-                    <StandardButton text={'Game'} handleClick={handleClick}/>
-                </div>
-                <div className={visible ? "animatedCircleRight border-2 border-black absolute right-24 bottom-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircleRight border-2 border-black absolute right-24 bottom-2 rounded-full bg-emerald-700 flex justify-center"}>
-                    <StandardButton text={'Giphy Machine'} handleClick={handleClick}/>
-                </div>
-            </div>
-            <div className="grid grid-cols-2 grid-rows-2 w-9/10 h-full">
                 {generateButtons(programs)}
             </div>
-        </>
     )
 
 

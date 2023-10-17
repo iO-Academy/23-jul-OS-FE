@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div>
-        {/*<WaitingRoom />*/}
-      <Desktop />
+        <WaitingRoom />
+      {/*<Desktop />*/}
     </div>
   )
 }
