@@ -1,0 +1,52 @@
+
+.circle {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.littleCircle {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.littleCircleRight {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    visibility: hidden;
+}
+
+.littleCircleLeft {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    visibility: hidden;
+}
+
+.animatedCircleLeft {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    animation-name: movingButtonsLeft;
+    animation-duration: 2s
+}
+
+.animatedCircleRight {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    animation-name: movingButtonsRight;
+    animation-duration: 2s;
+}
+
+@keyframes movingButtonsLeft{
+    from {left: 600px}
+    to {right: 600px}
+}
+
+@keyframes movingButtonsRight{
+    from {right: 600px}
+    to {right: 98px}
+}
