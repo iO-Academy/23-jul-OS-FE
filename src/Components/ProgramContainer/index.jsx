@@ -1,45 +1,18 @@
 import './ProgramContainer.css'
 import Draggable from "react-draggable";
 
-const ProgramContainer = ({toggleProgram}) => {
+const ProgramContainer = ({toggleProgram, text}) => {
     return (
-        <Draggable>
-                <div className="program">
-                    <div className="program-content">
-                        <header>
-                            <div className="close">
-                                <span className="close-btn" onClick={() => toggleProgram(false)}>Close</span>
-                            </div>
-                            <h1>Program</h1>
-                        </header>
-                        <body>
-                        <p>Content</p>
-                        </body>
-                    </div>
-                </div>
+        <Draggable handle="header">
+            <div className="program resize overflow-auto ">
+                <header className="header h-16">
+                    <span className="text-2xl">Program</span>
+                    <span className="close-btn absolute top-2 right-2" onClick={() => toggleProgram(false)}>Close</span>
+                </header>
+                <div className="program-content my-10 mx-20 h-auto">Content</div>
+            </div>
         </Draggable>
     )
 }
-
-
-
-
-
-
-//     return (
-//         <Popup trigger={<button>Open</button>}>
-//                 <div className={"border-2 border-black"}>
-//                     <div className={"bg-green-700 flex justify-between p-5 text-2xl"}>
-//                         Program Name
-//                         <button className={"border-2 border-black"}>Close</button>
-//                     </div>
-//                     <div className={"h-96 bg-green-400"}>
-//                         <div>
-//                         </div>
-//                     </div>
-//                 </div>
-//         </Popup>
-//     )
-// }
 
 export default ProgramContainer
