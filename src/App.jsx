@@ -1,13 +1,14 @@
 import './App.css'
 import Desktop from "./Components/Desktop/index.jsx";
-import ProgramSelector from "./Components/ProgramSelector/index.jsx";
+import WaitingRoom from "./Components/WaitingRoom/index.jsx";
 
 function App() {
 
 
   return (
     <div>
-      <Desktop />
+        <WaitingRoom />
+      {/*<Desktop />*/}
     </div>
   )
 }
