@@ -4,8 +4,6 @@ import {useState} from "react";
 
 const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram}) => {
 
-
-
     const handleClick = () => {
         console.log('button clicked')
     }
