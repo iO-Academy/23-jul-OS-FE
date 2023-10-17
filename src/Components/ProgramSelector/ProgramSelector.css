@@ -16,16 +16,6 @@
     height: 130px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     visibility: hidden;
-    animation-name: movingButtonsBack;
-    animation-duration: 2s
-}
-
-.littleCircleBackRight {
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-    animation-name: movingButtonsBack;
-    animation-duration: 2s
 }
 
 .littleCircleLeft {
@@ -59,9 +49,4 @@
 @keyframes movingButtonsRight{
     from {right: 600px}
     to {right: 98px}
-}
-
-@keyframes movingButtonsBack{
-    from {left: 230px}
-    to {right: 700px}
 }
