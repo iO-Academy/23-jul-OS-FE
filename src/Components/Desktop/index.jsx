@@ -26,7 +26,7 @@ const Desktop = () => {
                 <ProgramSelector username={"Colin"} icon={"Icon Here"} visible={showButtons} openMenu={openMenu}/>
             </div>
             <button onClick = {() => setIsProgramOpen(true)}>Open Program</button>
-            {isProgramOpen && <ProgramContainer toggleProgram={setIsProgramOpen} />}
+            {isProgramOpen && <ProgramContainer text="About the OS" toggleProgram={setIsProgramOpen} />}
         </>
     )
 }
