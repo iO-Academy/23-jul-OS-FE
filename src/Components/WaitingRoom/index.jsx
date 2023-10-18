@@ -3,6 +3,7 @@ import Welcome from "../Welcome/index.jsx";
 import UserSelect from "../UserSelect/index.jsx";
 import PasswordEntry from "../PasswordEntry/index.jsx";
 import UserSelector from "../UserSelector/index.jsx";
+import Desktop from "../Desktop/index.jsx";
 
 const WaitingRoom = () => {
     return (
@@ -13,6 +14,7 @@ const WaitingRoom = () => {
                     <Route path={"/userSelector"} element={<UserSelector/>}/>
                     <Route path={"/userSelect"} element={<UserSelect/>}/>
                     <Route path={"/passwordEntry"} element={<PasswordEntry />}/>
+                    <Route path={"/Desktop"} element={<Desktop />}/>
                 </Routes>
             </BrowserRouter>
         </div>
