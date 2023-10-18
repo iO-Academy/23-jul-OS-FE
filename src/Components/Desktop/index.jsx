@@ -2,6 +2,7 @@ import ProgramSelector from "../ProgramSelector/index.jsx";
 import WallpaperCircle from "../WallpaperCircle/index.jsx";
 import './Desktop.css'
 import {useState} from "react";
+import UserSelector from "../UserSelector/index.jsx";
 const Desktop = () => {
 
     const [showButtons, setShowButtons] = useState(false)
@@ -17,14 +18,12 @@ const Desktop = () => {
     return (
         <>
                 <div className={showButtons ? "min-h-screen bg-green-600 text-center text-color-black mt-0 pt-10 blur-2xl" : "min-h-screen bg-green-600 text-center text-color-black mt-0 pt-10"}>
-                {/*<WallpaperCircle />*/}
                 </div>
                 <div className="welcomeCircle z-10 fixed top-10 left-0 right-0 text-3xl">
-                    <ProgramSelector username={"Colin"} icon={"Icon Here"} visible={showButtons} openMenu={openMenu}/>
+                    <ProgramSelector username={"user"} icon={"Icon Here"} visible={showButtons} openMenu={openMenu}/>
                 </div>
         </>
     )
 }
-
 
 export default Desktop

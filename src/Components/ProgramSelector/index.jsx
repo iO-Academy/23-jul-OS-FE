@@ -2,11 +2,7 @@ import './ProgramSelector.css'
 import StandardButton from "../StandardButton/index.jsx";
 import {useState} from "react";
 
-const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram}) => {
-
-    const handleClick = () => {
-        console.log('button clicked')
-    }
+const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram, userName}) => {
 
     const programs = [
         {name: 'About',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
@@ -39,8 +35,6 @@ const ProgramSelector = ({username, icon, visible, openMenu, openProgram, active
                 {generateButtons(programs)}
             </div>
     )
-
-
 }
 
 export default ProgramSelector
