@@ -10,7 +10,7 @@ const ProgramContainer = ({toggleProgram, text, children}) => {
                     <span className="text-3xl">{text}</span>
                     <span className="close-btn absolute top-2 right-2" onClick={() => toggleProgram(false)}>Close</span>
                 </header>
-                <div className="program-content my-10 mx-20 p-5 h-auto"><AboutPage /></div>
+                <div className="program-content my-10 mx-20 p-5 h-auto">{children}</div>
             </div>
         </Draggable>
     )
