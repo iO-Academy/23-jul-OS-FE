@@ -5,52 +5,52 @@ import {useEffect, useState} from "react";
 const UserSelector = ({username, icon, visible, openMenu, openProgram, activeProgram}) => {
 
     // const handleClick = () => {
-    //     console.log('button clicked')
+    // //     console.log('button clicked')
+    // // }
+    //
+    // const [users, setUsers] = useState()
+    // const [user, setUser] = useState()
+    // const getAllUsers = async () => {
+    //     let response = await fetch ('http://0.0.0.0:8080/users/')
+    //     let usersData = await response.json()
+    //     setUsers(usersData.data)
     // }
-
-    const [users, setUsers] = useState()
-    const [user, setUser] = useState()
-    const getAllUsers = async () => {
-        let response = await fetch ('http://0.0.0.0:8080/users/')
-        let usersData = await response.json()
-        setUsers(usersData.data)
-    }
-
-    // const getUser = async (id) => {
-    //     let response = await fetch (`http://0.0.0.0:8080/users/${id}`)
-    //     let userData = await response.json()
-    //     setUser(userData)
+    //
+    // // const getUser = async (id) => {
+    // //     let response = await fetch (`http://0.0.0.0:8080/users/${id}`)
+    // //     let userData = await response.json()
+    // //     setUser(userData)
+    // // }
+    //
+    // useEffect(() => {
+    //     getAllUsers()
+    // }, []);
+    //
+    // const createUserNameArray = () => {
+    //     return users.map(user => {
+    //         return <div key={user.username}>{user.username}</div>
+    //     })
     // }
-
-    useEffect(() => {
-        getAllUsers()
-    }, []);
-
-    const createUserNameArray = () => {
-        return users.map(user => {
-            return <div key={user.username}>{user.username}</div>
-        })
-    }
-
-
-
-    // const programs = [
-    //     {name: 'About',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
-    //     {name: 'Theme',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'bottom'},
-    //     {name: 'Game',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'top'},
-    //     {name: 'Giphy Machiney',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
-    // ]
-
-    const generateButtons = (array) => {
-        return array.map(item => {
-            return <div className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"} key={item.name}>
-                <StandardButton
-                    key={item.name}
-                    text={item.name}
-                    handleClick={openMenu}/>
-            </div>
-        })
-    }
+    //
+    //
+    //
+    // // const programs = [
+    // //     {name: 'About',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
+    // //     {name: 'Theme',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'bottom'},
+    // //     {name: 'Game',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'top'},
+    // //     {name: 'Giphy Machiney',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
+    // // ]
+    //
+    // const generateButtons = (array) => {
+    //     return array.map(item => {
+    //         return <div className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"} key={item.name}>
+    //             <StandardButton
+    //                 key={item.name}
+    //                 text={item.name}
+    //                 handleClick={openMenu}/>
+    //         </div>
+    //     })
+    // }
 
     return (
             <div className="flex justify-center">
@@ -62,7 +62,7 @@ const UserSelector = ({username, icon, visible, openMenu, openProgram, activePro
                         <StandardButton text={visible ? 'Close' : 'Open'} handleClick={openMenu}/>
                     </div>
                 </div>
-                {users && createUserNameArray()}
+                {/*{users && createUserNameArray()}*/}
             </div>
     )
 
