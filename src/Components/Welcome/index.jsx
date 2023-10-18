@@ -15,7 +15,7 @@ const Welcome = () => {
                 <p>CaterPillar OS</p>
                 <container className="WelcomeCircle mt-10 rounded-full bg-green-900 bg-opacity-45 mt-0 z-10 flex justify-center flex-wrap flex-col content-center">
                     <div className="getProgramButton rounded-full bg-emerald-700 mt-20 flex justify-center">
-                        <Link className='flex justify-center' to={"userselector"}><StandardButton text ={'Enter'} onClick={handleClick} /></Link>
+                        <Link className='flex justify-center' to={"/userSelector"}><StandardButton text ={'Enter'} onClick={handleClick} /></Link>
                     </div>
                 </container>
             </div>
