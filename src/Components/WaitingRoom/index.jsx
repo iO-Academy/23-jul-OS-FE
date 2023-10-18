@@ -14,7 +14,7 @@ const WaitingRoom = () => {
                     <Route path={"/userSelector"} element={<UserSelector/>}/>
                     <Route path={"/userSelect"} element={<UserSelect/>}/>
                     <Route path={"/passwordEntry"} element={<PasswordEntry />}/>
-                    <Route path={"/Desktop"} element={<Desktop />}/>
+                    <Route path={"/desktop"} element={<Desktop />}/>
                 </Routes>
             </BrowserRouter>
         </div>
