@@ -24,12 +24,13 @@ const UserSelector = () => {
     const createUserNameArray = () => {
         return users.map(user => {
             return <div className= "getUserButton border-2 border-black rounded-full bg-emerald-700 flex justify-center" key={user.id}>
-        <StandardButton
-            key={user.id}
-            text={user.username}
-            handleClick={() => {attemptToLogin(user.needspassword)}} />
+                <StandardButton
+                key={user.id}
+                text={user.username}
+                handleClick={() => {attemptToLogin(user.needspassword)}}
+                />
             </div>
-            })
+        })
     }
 
     const attemptToLogin = (needspassword) => {
@@ -42,17 +43,17 @@ const UserSelector = () => {
 
     return (
         <>
-        <div className ='movingButtonsBottomToTop flex justify-center'>{users && createUserNameArray()} </div>
-        <div className = "flex justify-center flex-wrap flex-col content-center">
-            <div className="WelcomeCircle rounded-full bg-green-900 bg-opacity-45 mt-20 z-10 flex justify-center flex-wrap content-center">
-                <p className='mt-10'>Please select user</p>
-                <p>or log in as guest</p>
+            <div className ='movingButtonsBottomToTop flex justify-center'>{users && createUserNameArray()} </div>
+                <div className = "flex justify-center flex-wrap flex-col content-center">
+                <div className="WelcomeCircle2 rounded-full bg-green-900 bg-opacity-45 mt-20 z-10 flex justify-center flex-wrap content-center">
+                    <p className='mt-10'>Please select user</p>
+                    <p>or log in as guest</p>
                 <div className="getProgramButton rounded-full bg-emerald-700 flex justify-center">
                     <Link className='flex justify-center' to={"/desktop"}><StandardButton text ={'Guest'}/></Link>
                 </div>
+                </div>
             </div>
-        </div>
-</>
+        </>
     )
 }
 

@@ -1,7 +1,6 @@
-import './Welcome.css'
+
 import StandardButton from "../StandardButton/index.jsx";
 import {Link} from "react-router-dom";
-
 
 
 const Welcome = () => {
