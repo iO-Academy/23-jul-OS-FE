@@ -2,6 +2,8 @@
     position: fixed;
     top: 100px;
     left: 100px;
+    min-height: 300px;
+    min-width: 400px;
     width: 70%;
     height: 70%;
     background-color: #7DD160;

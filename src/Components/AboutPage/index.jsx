@@ -12,22 +12,22 @@ const AboutPage = () => {
                 <div className="pt-2">
                     <p>React v18.2.0, using Vite as our React compiler</p>
                     <p>Tailwind v3.3.3</p>
-                    <p>PHP v8.2.0 (using LAMP as our software stack)</p>
+                    <p>PHP v8.2.0, using LAMP as our software stack</p>
                     <p>Slim v4.12.0</p>
                     <p>IDE - PHPStorm</p>
                 </div>
             </div>
             <div className="p-5">
                 <p>Links to GitHub repositories:</p>
-                <p className="flex flex-wrap">Front-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-FE" target="_blank"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Back-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-BE" target="_blank"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Front-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-FE" target="_blank" rel="noreferrer"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Back-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-BE" target="_blank" rel="noreferrer"><AiFillGithub /></a></p>
             </div>
             <div className="p-5">
                 <p>Contributors:</p>
-                <p className="flex flex-wrap">Colin Meier <a className="pl-2" href="https://github.com/CMeier556" target="_blank"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Joshua Bryan <a className="pl-2" href="https://github.com/Joshsilas" target="_blank"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Alex Mansfield <a className="pl-2" href="https://github.com/alexjames4" target="_blank"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Cosmin Darius <a className="pl-2" href="https://github.com/CosminDarius1" target="_blank"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Colin Meier <a className="pl-2" href="https://github.com/CMeier556" target="_blank" rel="noreferrer"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Joshua Bryan <a className="pl-2" href="https://github.com/Joshsilas" target="_blank" rel="noreferrer"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Alex Mansfield <a className="pl-2" href="https://github.com/alexjames4" target="_blank" rel="noreferrer"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Cosmin Darius <a className="pl-2" href="https://github.com/CosminDarius1" target="_blank" rel="noreferrer"><AiFillGithub /></a></p>
             </div>
         </>
     )
