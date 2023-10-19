@@ -4,6 +4,9 @@
     height: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
 }
+* {
+    font-family: Georgia;
+}
 
 .WelcomeCircle {
     width: 300px;
@@ -44,8 +47,8 @@
 }
 
 .animatedCircleLeft {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     animation-name: movingButtonsLeft;
     animation-duration: 2s;
@@ -61,8 +64,8 @@
 }
 
 .animatedCircleRight {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     animation-name: movingButtonsRight;
     animation-duration: 2s;

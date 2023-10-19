@@ -3,6 +3,8 @@ import StandardButton from "../StandardButton/index.jsx";
 import {useState} from "react";
 import ProgramContainer from "../ProgramContainer/index.jsx";
 import AboutPage from "../AboutPage/index.jsx";
+import {AiOutlineUser} from "react-icons/ai";
+import {FaUserAlt} from "react-icons/fa";
 
 const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram, userName}) => {
 
@@ -41,7 +43,7 @@ const ProgramSelector = ({username, icon, visible, openMenu, openProgram, active
                     className="circle rounded-full bg-green-900 bg-opacity-45 mt-5 z-10 flex justify-center flex-wrap flex-col content-center">
                     <div className="text-center mt-5">Welcome</div>
                     <div className="text-center mt-5">{username}</div>
-                    <div className="bg-red-800 text-center mt-5">{icon}</div>
+                    <div className=" flex justify-center mt-5  text-7xl"> <FaUserAlt /></div>
                     <div className="getProgramButton rounded-full bg-emerald-700 mt-20 flex justify-center">
                         <StandardButton text={visible ? 'Close' : 'Open'} handleClick={openMenu}/>
                     </div>
