@@ -19,15 +19,15 @@ const AboutPage = () => {
             </div>
             <div className="p-5">
                 <p>Links to GitHub repositories:</p>
-                <p className="flex flex-wrap">Front-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-FE"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Back-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-BE"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Front-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-FE" target="_blank"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Back-end <a className="pl-2" href="https://github.com/iO-Academy/23-jul-OS-BE" target="_blank"><AiFillGithub /></a></p>
             </div>
             <div className="p-5">
                 <p>Contributors:</p>
-                <p className="flex flex-wrap">Colin Meier <a className="pl-2" href="https://github.com/CMeier556"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Joshua Bryan <a className="pl-2" href="https://github.com/Joshsilas"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Alex Mansfield <a className="pl-2" href="https://github.com/alexjames4"><AiFillGithub /></a></p>
-                <p className="flex flex-wrap">Cosmin Darius <a className="pl-2" href="https://github.com/CosminDarius1"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Colin Meier <a className="pl-2" href="https://github.com/CMeier556" target="_blank"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Joshua Bryan <a className="pl-2" href="https://github.com/Joshsilas" target="_blank"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Alex Mansfield <a className="pl-2" href="https://github.com/alexjames4" target="_blank"><AiFillGithub /></a></p>
+                <p className="flex flex-wrap">Cosmin Darius <a className="pl-2" href="https://github.com/CosminDarius1" target="_blank"><AiFillGithub /></a></p>
             </div>
         </>
     )
