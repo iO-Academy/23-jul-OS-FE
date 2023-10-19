@@ -3,7 +3,7 @@ const StandardButton = ({text, handleClick}) => {
 
     return (
         <>
-            <button onClick={handleClick} >{text}</button>
+            <button className="" onClick={handleClick} >{text}</button>
         </>
     )
 }

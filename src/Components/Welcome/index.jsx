@@ -1,4 +1,4 @@
-import './Welcome.css'
+import './../../App.css'
 import StandardButton from "../StandardButton/index.jsx";
 import {Link} from "react-router-dom";
 
