@@ -5,6 +5,7 @@ import {GrClose} from "react-icons/gr";
 
 const ProgramContainer = ({toggleProgram, text, children}) => {
     return (
+
         <Draggable handle="header">
             <div className="program resize overflow-auto rounded-md">
                 <header className="header h-16 bg-green-700 pt-4 text-center">
