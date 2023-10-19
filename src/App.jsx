@@ -9,7 +9,7 @@ import Clock from "./Components/Clock/index.jsx";
 function App() {
 
   return (
-      <div className={"min-h-screen bg-green-600 text-center text-color-black mt-0 text-3xl pt-10"}>
+      <div>
     <BrowserRouter>
         <Routes>
             <Route path={"/"} element={<Welcome/>}/>

@@ -7,7 +7,7 @@ const Welcome = () => {
     }
 
     return (
-        <>
+        <div className={"min-h-screen bg-green-600 text-center text-color-black mt-0 text-3xl pt-10"}>
             <div className = "flex justify-center flex-wrap flex-col content-center mt-10">
                 <p>Welcome to</p>
                 <p>CaterPillar OS</p>
@@ -17,7 +17,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

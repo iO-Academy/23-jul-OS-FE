@@ -1,4 +1,6 @@
+
 import ProgramSelector from "../ProgramSelector/index.jsx";
+import NavBar from "../NavBar/index.jsx";
 import {useState} from "react";
 
 const Desktop = () => {
@@ -15,6 +17,7 @@ const Desktop = () => {
 
     return (
         <>
+            <NavBar openMenu={openMenu}/>
             <div className={showButtons ? "min-h-screen bg-green-600 text-center text-color-black mt-0 pt-10 blur-2xl"
                 : "min-h-screen bg-green-600 text-center text-color-black mt-0 pt-10"}>
             </div>

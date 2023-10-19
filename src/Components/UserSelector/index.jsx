@@ -42,7 +42,7 @@ const UserSelector = () => {
     }
 
     return (
-        <>
+        <div className={"min-h-screen bg-green-600 text-center text-color-black mt-0 text-3xl pt-10"}>
             <div className ='movingButtonsBottomToTop flex justify-center'>{users && createUserNameArray()} </div>
                 <div className = "flex justify-center flex-wrap flex-col content-center">
                 <div className="WelcomeCircle2 rounded-full bg-green-900 bg-opacity-45 mt-20 z-10 flex justify-center flex-wrap content-center">
@@ -53,7 +53,7 @@ const UserSelector = () => {
                 </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
