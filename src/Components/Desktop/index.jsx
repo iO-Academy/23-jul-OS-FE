@@ -1,8 +1,7 @@
 import ProgramSelector from "../ProgramSelector/index.jsx";
-import WallpaperCircle from "../WallpaperCircle/index.jsx";
 import './Desktop.css'
 import {useState} from "react";
-import UserSelector from "../UserSelector/index.jsx";
+
 const Desktop = () => {
 
     const [showButtons, setShowButtons] = useState(false)

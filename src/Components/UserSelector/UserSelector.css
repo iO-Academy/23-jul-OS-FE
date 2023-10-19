@@ -1,57 +1,57 @@
 
-.circle {
-    width: 600px;
-    height: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-}
+/*.circle {*/
+/*    width: 600px;*/
+/*    height: 600px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);*/
+/*}*/
 
-.getProgramButton {
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-}
+/*.getProgramButton {*/
+/*    width: 130px;*/
+/*    height: 130px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);*/
+/*}*/
 
-.littleCircle {
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-    visibility: hidden;
-}
-.getUserButton {
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-    margin-left: 10px;
-    animation-name: userFadeIn;
-    animation-duration: 5s
-}
-.animatedCircleLeft {
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-    animation-name: movingButtonsLeft;
-    animation-duration: 2s
-}
+/*.littleCircle {*/
+/*    width: 130px;*/
+/*    height: 130px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);*/
+/*    visibility: hidden;*/
+/*}*/
+/*.getUserButton {*/
+/*    width: 130px;*/
+/*    height: 130px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);*/
+/*    margin-left: 10px;*/
+/*    animation-name: userFadeIn;*/
+/*    animation-duration: 5s*/
+/*}*/
+/*.animatedCircleLeft {*/
+/*    width: 130px;*/
+/*    height: 130px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);*/
+/*    animation-name: movingButtonsLeft;*/
+/*    animation-duration: 2s*/
+/*}*/
 
-.animatedCircleRight {
-    width: 130px;
-    height: 130px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-    animation-name: movingButtonsRight;
-    animation-duration: 2s;
-}
+/*.animatedCircleRight {*/
+/*    width: 130px;*/
+/*    height: 130px;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);*/
+/*    animation-name: movingButtonsRight;*/
+/*    animation-duration: 2s;*/
+/*}*/
 
-@keyframes movingButtonsLeft{
-    from {left: 600px}
-    to {right: 600px}
-}
+/*@keyframes movingButtonsLeft{*/
+/*    from {left: 600px}*/
+/*    to {right: 600px}*/
+/*}*/
 
-@keyframes movingButtonsRight{
-    from {right: 600px}
-    to {right: 98px}
-}
+/*@keyframes movingButtonsRight{*/
+/*    from {right: 600px}*/
+/*    to {right: 98px}*/
+/*}*/
 
-@keyframes userFadeIn{
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
+/*@keyframes userFadeIn{*/
+/*    0% { opacity: 0; }*/
+/*    100% { opacity: 1; }*/
+/*}*/
