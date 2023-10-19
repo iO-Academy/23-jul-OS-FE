@@ -1,9 +1,5 @@
 
-.WelcomeCircle {
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
-}
+
 .PasswordCircle {
     width: 400px;
     height: 400px;
@@ -16,6 +12,10 @@
     width: 600px;
     height: 600px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+* {
+    font-family: Georgia;
 }
 
 .WelcomeCircle {
@@ -57,8 +57,10 @@
 }
 
 .animatedCircleLeft {
-    width: 130px;
-    height: 130px;
+
+    width: 140px;
+    height: 140px;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     animation-name: movingButtonsLeft;
     animation-duration: 2s;
@@ -74,8 +76,9 @@
 }
 
 .animatedCircleRight {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
+>>>>>>> sprint_review_ready
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     animation-name: movingButtonsRight;
     animation-duration: 2s;

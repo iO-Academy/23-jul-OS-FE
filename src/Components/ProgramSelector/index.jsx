@@ -1,42 +1,59 @@
 
 import StandardButton from "../StandardButton/index.jsx";
 import {useState} from "react";
+import ProgramContainer from "../ProgramContainer/index.jsx";
+import AboutPage from "../AboutPage/index.jsx";
+import {AiOutlineUser} from "react-icons/ai";
+import {FaUserAlt} from "react-icons/fa";
 
 const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram, userName}) => {
+    const [aboutProgramOpen, setAboutProgramOpen] = useState(false)
 
-    const programs = [
-        {name: 'About',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
-        {name: 'Theme',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'bottom'},
-        {name: 'Game',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'top'},
-        {name: 'Giphy Machiney', location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
-    ]
-
-    const generateButtons = (array) => {
-        return array.map(item => {
-            return <div className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-4 rounded-full bg-emerald-700 flex justify-center"
-                    : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"} key={item.name}>
-                <StandardButton
-                    key={item.name}
-                    text={item.name}
-                    handleClick={openMenu}/>
-            </div>
-        })
+    const handleAbout = () => {
+        setAboutProgramOpen(true)
     }
 
-    return (
-        <div className="flex justify-center">
-            <div className="circle rounded-full bg-green-900 bg-opacity-45 mt-5 z-10 flex justify-center flex-wrap flex-col content-center">
-                <div className="text-center mt-5">Welcome</div>
-                <div className="text-center mt-5">{username}</div>
-                <div className="bg-red-800 text-center mt-5">{icon}</div>
-                <div className="getProgramButton rounded-full bg-emerald-700 mt-20 flex justify-center">
-                    <StandardButton text={visible ? 'Close' : 'Open'} handleClick={openMenu}/>
+        const programs = [
+            {name: 'About', location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
+            {name: 'Theme', location: 'animatedCircleLeft', horizontal: 'left', vertical: 'bottom'},
+            {name: 'Game', location: 'animatedCircleRight', horizontal: 'right', vertical: 'top'},
+            {name: 'Giphy Machiney', location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
+        ]
+
+        const generateButtons = (array) => {
+            return array.map(item => {
+                return <div
+                    className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-4 rounded-full bg-emerald-700 flex justify-center"
+                        : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"}
+                    key={item.name}>
+                    <StandardButton
+                        key={item.name}
+                        text={item.name}
+                        handleClick={handleAbout}/>
+                </div>
+            })
+        }
+
+        return (
+            <div className="flex justify-center">
+                <div
+                    className="circle rounded-full bg-green-900 bg-opacity-45 mt-5 z-10 flex justify-center flex-wrap flex-col content-center">
+                    <div className="text-center mt-5">Welcome</div>
+                    <div className="text-center mt-5">{username}</div>
+                    <div className=" flex justify-center mt-5  text-7xl"> <FaUserAlt /></div>
+                    <div className="getProgramButton rounded-full bg-emerald-700 mt-20 flex justify-center">
+                        <StandardButton text={visible ? 'Close' : 'Open'} handleClick={openMenu}/>
+                    </div>
+                </div>
+                {generateButtons(programs)}
+                <div>{aboutProgramOpen && <ProgramContainer text="About the OS" toggleProgram={setAboutProgramOpen}>
+                        <AboutPage/>
+                        </ProgramContainer>}
                 </div>
             </div>
-                {generateButtons(programs)}
-        </div>
-    )
-}
+
+        )
+    }
 
 export default ProgramSelector
 
