@@ -5,14 +5,20 @@ import ProgramContainer from "../ProgramContainer/index.jsx";
 import AboutPage from "../AboutPage/index.jsx";
 import {AiOutlineUser} from "react-icons/ai";
 import {FaUserAlt} from "react-icons/fa";
+import GiphyMachiney from "../GiphyMachiney/index.jsx";
 
 const ProgramSelector = ({username, icon, visible, openMenu, openProgram, activeProgram, userName}) => {
 
 
     const [aboutProgramOpen, setAboutProgramOpen] = useState(false)
+    const [giphyProgramOpen, setGiphyProgramOpen] = useState(false)
 
     const handleAbout = () => {
         setAboutProgramOpen(true)
+    }
+
+    const handleGiphy = () => {
+        setGiphyProgramOpen(true)
     }
 
         const programs = [
@@ -31,7 +37,7 @@ const ProgramSelector = ({username, icon, visible, openMenu, openProgram, active
                     <StandardButton
                         key={item.name}
                         text={item.name}
-                        handleClick={handleAbout}/>
+                        handleClick={handleGiphy}/>
                 </div>
             })
 
@@ -49,12 +55,11 @@ const ProgramSelector = ({username, icon, visible, openMenu, openProgram, active
                     </div>
                 </div>
                 {generateButtons(programs)}
-                <div>{aboutProgramOpen && <ProgramContainer text="About the OS" toggleProgram={setAboutProgramOpen}>
-                        <AboutPage/>
-                        </ProgramContainer>}
+                <div>{giphyProgramOpen && <ProgramContainer text="Giphy Machiney" toggleProgram={setGiphyProgramOpen}>
+                                            <GiphyMachiney />
+                                            </ProgramContainer>}
                 </div>
             </div>
-
         )
     }
 
