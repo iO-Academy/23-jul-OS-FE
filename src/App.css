@@ -1,3 +1,4 @@
+
 .WelcomeCircle {
     width: 300px;
     height: 300px;
@@ -9,3 +10,90 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     padding: 20px;
 }
+
+
+.circle {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.WelcomeCircle {
+    width: 300px;
+    height: 300px;
+    filter: blur(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.WelcomeCircle2 {
+    width: 300px;
+    height: 300px;
+    filter: blur(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    animation-name: userFadeIn;
+    animation-duration: 3s
+}
+
+.getProgramButton {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+}
+
+.littleCircle {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    visibility: hidden;
+}
+
+.getUserButton {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    margin-left: 10px;
+    animation-name: userFadeIn;
+    animation-duration: 5s
+}
+
+.animatedCircleLeft {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    animation-name: movingButtonsLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.top-4 {
+    top: 1rem;
+}
+
+.bottom-4 {
+    bottom: 1rem;
+}
+
+.animatedCircleRight {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
+    animation-name: movingButtonsRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movingButtonsLeft{
+    from {left: 50%}
+    to {left: 98px}
+}
+
+@keyframes movingButtonsRight{
+    from {right: 50%}
+    to {right: 98px}
+}
+
+@keyframes userFadeIn{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+

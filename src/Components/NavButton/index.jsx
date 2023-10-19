@@ -1,7 +1,6 @@
-const NavButton = () => {
+const NavButton = ({text, name, handleClick}) => {
     return (
-        <>
-        </>
+        <button onClick={handleClick} > {text} {name} </button>
     )
 }
 
