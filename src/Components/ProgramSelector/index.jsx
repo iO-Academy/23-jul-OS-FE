@@ -1,4 +1,4 @@
-import './ProgramSelector.css'
+
 import StandardButton from "../StandardButton/index.jsx";
 import {useState} from "react";
 
@@ -8,12 +8,12 @@ const ProgramSelector = ({username, icon, visible, openMenu, openProgram, active
         {name: 'About',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'top'},
         {name: 'Theme',  location: 'animatedCircleLeft', horizontal: 'left', vertical: 'bottom'},
         {name: 'Game',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'top'},
-        {name: 'Giphy Machiney',  location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
+        {name: 'Giphy Machiney', location: 'animatedCircleRight', horizontal: 'right', vertical: 'bottom'},
     ]
 
     const generateButtons = (array) => {
         return array.map(item => {
-            return <div className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-2 rounded-full bg-emerald-700 flex justify-center" : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"} key={item.name}>
+            return <div className={visible ? item.location + " border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "-4 rounded-full bg-emerald-700 flex justify-center" : "littleCircle border-2 border-black absolute " + item.horizontal + "-24 " + item.vertical + "2 rounded-full bg-emerald-700 flex justify-center"} key={item.name}>
                 <StandardButton
                     key={item.name}
                     text={item.name}

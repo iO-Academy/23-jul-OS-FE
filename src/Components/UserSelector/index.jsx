@@ -1,4 +1,4 @@
-import './UserSelector.css'
+
 import StandardButton from "../StandardButton/index.jsx";
 import {useEffect, useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
