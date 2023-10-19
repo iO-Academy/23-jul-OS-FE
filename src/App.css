@@ -78,7 +78,6 @@
 .animatedCircleRight {
     width: 140px;
     height: 140px;
->>>>>>> sprint_review_ready
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.47);
     animation-name: movingButtonsRight;
     animation-duration: 2s;

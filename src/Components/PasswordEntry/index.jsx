@@ -44,18 +44,13 @@ const PasswordEntry = ({enteredPassword, userId}) => {
         <div className = "flex justify-center flex-wrap flex-col content-center mt-0">
             <container className="PasswordCircle rounded-full bg-green-900 bg-opacity-45 mt-10 z-10 flex justify-center flex-wrap content-center">
             <div>Enter Password</div>
-                <div>
-                        {
-                            !passwordMatch ? 'Password does not match db' : ''
-                        }
-                </div>
                 <PasswordInput/>
                     <div className="flex flex-wrap flex-row justify-between">
                         <div className="littleCirclePassword rounded-full bg-emerald-700 mt-10 m-6 flex justify-center">
-                            <StandardButton className="littleCirclePassword" text={"Submit"} handleClick={checkPassword}/>
+                            <Link to="/desktop"><StandardButton className="littleCirclePassword" text={"Submit"} handleClick={checkPassword}/></Link>
                         </div>
                         <div className="littleCirclePassword rounded-full bg-red-400 mt-10 m-6 flex justify-center">
-                            <Link to={"/"}><StandardButton className="littleCircleRight" text={"Go Back"}/></Link>
+                            <Link to={"/"}><StandardButton className="littleCirclePassword" text={"Go Back"}/></Link>
                         </div>
                     </div>
             </container>

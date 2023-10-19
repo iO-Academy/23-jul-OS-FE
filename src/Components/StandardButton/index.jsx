@@ -1,9 +1,9 @@
 
-const StandardButton = ({text, handleClick}) => {
+const StandardButton = ({text, handleClick, className}) => {
 
     return (
         <>
-            <button className="" onClick={handleClick} >{text}</button>
+            <button className={className} onClick={handleClick} >{text}</button>
         </>
     )
 }
