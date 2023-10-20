@@ -2,14 +2,12 @@
     position: fixed;
     top: 100px;
     left: 100px;
+    min-height: 300px;
+    min-width: 400px;
     width: 70%;
     height: 70%;
     background-color: #7DD160;
     z-index: 100;
-}
-
-header {
-    margin: 5px;
 }
 
 .program-content {
@@ -22,11 +20,11 @@ header {
 }
 
 .close-btn {
-    margin: 5px;
+    margin: 1px;
     border: 1px solid #000;
+    border-radius: 10px;
     padding: 5px 7px;
     background-color: red;
-    font-size: 1.5rem;
     cursor: pointer;
 }
 
